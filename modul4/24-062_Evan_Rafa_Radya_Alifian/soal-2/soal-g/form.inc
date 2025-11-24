@@ -1,28 +1,28 @@
-<form action="./processData.php" method="post" name="myForm">
+<form action="./processData_form.php" method="post" name="myForm">
   <fieldset> 
     <legend>Person Detail</legend>
     <div class="form_field">
       <label for="surname">Surname:</label>
       <input type="text" name="surname" id="surname" value="<?php if(isset($_POST['surname'])) {
-        echo $_POST['surname']
+        echo $_POST['surname'];
       } ?>">
     </div> 
     <div class="form_field"> 
       <label for="email">Email:</label>
       <input type="email" name="email" id="email" value="<?php if(isset($_POST['email'])) {
-        echo $_POST['email']
+        echo $_POST['email'];
       } ?>">
     </div> 
     <div class="form_field"> 
       <label for="password">Password:</label> 
       <input type="password" name="password" id="password" value="<?php if(isset($_POST['password'])) {
-        echo $_POST['password']
+        echo $_POST['password'];
       } ?>"> 
     </div> 
     <div class="form_field"> 
       <label for="address">Address:</label> 
       <textarea name="address" id="address" value="<?php if(isset($_POST['address'])) {
-        echo $_POST['address']
+        echo $_POST['address'];
       } ?>"></textarea> 
     </div> 
     <div class="form_field"> 

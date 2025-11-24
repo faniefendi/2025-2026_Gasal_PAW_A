@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $err_msg[] = "NIM tidak boleh kosong";
   }
 
-  if (filter_var($_POST["nim"], FILTER_VALIDATE_EMAIL)) {
+  if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
     $err_msg[] = "Email tidak valid";
   }
   
